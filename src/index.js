@@ -27,7 +27,7 @@ class ServiceWorkerPlugin {
     const childCompiler = compilation.createChildCompiler(ENTRY_NAME, {
       filename: option.filename
     })
-    const swFilePath = resolve(__dirname, `${option.path}${option.filename}`)
+    const swFilePath = resolve(option.path + option.filename)
     const childEntryCompiler = new SingleEntryPlugin(compiler.context, swFilePath)
     childEntryCompiler.apply(childCompiler)
 
