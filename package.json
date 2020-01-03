@@ -1,0 +1,27 @@
+{
+  "name": "compile-sw-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guochengwei/compile-sw-webpack-plugin.git"
+  },
+  "author": "guochengwei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guochengwei/compile-sw-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/guochengwei/compile-sw-webpack-plugin#readme",
+  "dependencies": {
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "standard-version": "^7.0.1"
+  },
+  "scripts": {
+    "build": "babel src -d ./ --copy-files",
+    "release": "standard-version"
+  }
+}
